@@ -33,3 +33,15 @@ body{overflow-wrap:anywhere}.site-header{gap:1rem}.site-header nav{display:flex;
 
 /* Faithful manuscript presentation — no editorial verification notices. */
 .example-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:1.8rem 0 2.5rem}.example-grid article{padding:1.3rem 1.5rem;background:var(--panel);border:1px solid var(--line);border-radius:12px}.example-grid article h2{margin-top:0}.example-grid article p{margin:.5rem 0}.count-name{font-family:'Cormorant Garamond',serif;font-size:1.65rem;color:var(--gold);margin:2rem 0 .6rem}.resource-original p{padding:.7rem 1rem;border-left:2px solid var(--gold);background:var(--panel);margin:.6rem 0}.resource-original p:nth-child(even){border-color:var(--muted)}.wheel-slot{min-height:40px;border-bottom:1px solid var(--line);margin:1rem 0 2rem}.featured-quote{max-width:900px;margin:2.2rem auto}.doorway-feature{max-width:650px}@media(max-width:700px){.example-grid{grid-template-columns:1fr}}
+
+/* 2026-11-22 typography correction: remove oversized stacked hero headline */
+.hero{padding:58px 0 44px!important}
+.hero .container{max-width:1040px}
+.hero h1{font-family:Inter,Arial,sans-serif!important;font-size:clamp(26px,3.2vw,43px)!important;font-weight:500!important;line-height:1.28!important;letter-spacing:-.025em!important;max-width:950px!important;margin:0 auto 28px!important;text-wrap:balance}
+.hero blockquote{max-width:750px!important;margin:26px auto 0!important;font-size:clamp(17px,1.75vw,23px)!important;line-height:1.55!important}
+.hero blockquote cite{font-size:12px!important}
+.section h1{font-family:Inter,Arial,sans-serif!important;font-size:clamp(26px,3vw,39px)!important;font-weight:500!important;line-height:1.3!important}
+.section h2{font-size:clamp(27px,3.2vw,39px)!important;line-height:1.2!important}
+.section{padding-top:55px!important;padding-bottom:55px!important}
+.featured-quote{font-size:clamp(20px,2.2vw,28px)!important}
+@media(max-width:600px){.hero{padding:40px 0 30px!important}.hero h1{font-size:clamp(24px,6.2vw,32px)!important}.hero blockquote{font-size:17px!important}.section{padding-top:40px!important;padding-bottom:40px!important}}

@@ -45,3 +45,7 @@ body{overflow-wrap:anywhere}.site-header{gap:1rem}.site-header nav{display:flex;
 .section{padding-top:55px!important;padding-bottom:55px!important}
 .featured-quote{font-size:clamp(20px,2.2vw,28px)!important}
 @media(max-width:600px){.hero{padding:40px 0 30px!important}.hero h1{font-size:clamp(24px,6.2vw,32px)!important}.hero blockquote{font-size:17px!important}.section{padding-top:40px!important;padding-bottom:40px!important}}
+
+/* Core Chart: actual exported wheels, placed directly below Laurie's examples */
+.example-wheel{margin:1.2rem 0 0;max-width:100%;background:#000;border-radius:10px;overflow:hidden}
+.example-wheel img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:contain}

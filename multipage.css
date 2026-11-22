@@ -6,3 +6,7 @@ body{overflow-wrap:anywhere}.site-header{gap:1rem}.site-header nav{display:flex;
 .editorial-interpretation{color:#65c6d4!important;background:rgba(40,171,192,.105);border-bottom:1px dashed #65c6d4;border-radius:3px;padding:2px 4px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 :root[data-theme="ivory"] .editorial-interpretation,:root[data-theme="lavender"] .editorial-interpretation{color:#086d83!important;background:rgba(3,121,150,.085);border-bottom-color:#086d83}
 .review-legend{position:relative;max-width:830px;margin:20px auto 0;padding:14px 18px;border:1px solid var(--line);border-radius:10px;font:13px/1.6 Inter,Arial,sans-serif;color:var(--ink)}.review-swatch{display:inline-block;width:13px;height:13px;background:#65c6d4;vertical-align:-2px;margin-right:6px;border-radius:2px}.review-legend strong{color:var(--ink)}
+
+/* Fine-grained manuscript comparison: mark only non-matching text fragments. */
+.editorial-added{color:#65c6d4!important;background:rgba(40,171,192,.105);border-bottom:1px dashed #65c6d4;border-radius:2px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+:root[data-theme="ivory"] .editorial-added,:root[data-theme="lavender"] .editorial-added{color:#086d83!important;background:rgba(3,121,150,.085);border-bottom-color:#086d83}

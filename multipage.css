@@ -59,3 +59,17 @@ body{overflow-wrap:anywhere}.site-header{gap:1rem}.site-header nav{display:flex;
 .chart-example-grid .chart-example-card .example-wheel{margin-top:auto;padding-top:24px;background:transparent;border-radius:0;overflow:visible}
 .chart-example-grid .chart-example-card .example-wheel img{display:block;width:100%;height:auto;aspect-ratio:1;border-radius:12px;background:#000;object-fit:contain}
 @media(max-width:700px){.chart-example-grid .chart-example-card{padding:20px}.chart-example-grid .chart-example-card .example-wheel{margin-top:16px;padding-top:0}}
+
+/* Resources — editorial bibliography, preserving original manuscript text */
+.resources-layout{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,3vw,40px);margin:34px 0 55px}
+.resources-group{min-width:0;padding:clamp(23px,2.8vw,35px);border:1px solid var(--line);border-radius:16px;background:var(--panel)}
+.resources-group h2{font:500 clamp(23px,2.4vw,31px)/1.25 'Cormorant Garamond',Georgia,serif!important;color:var(--gold);margin:0 0 22px;padding-bottom:15px;border-bottom:1px solid var(--line)}
+.resources-items{display:flex;flex-direction:column;gap:0}
+.resources-items p{font-size:clamp(14px,1.25vw,16px);line-height:1.7;margin:0!important;padding:14px 0!important;background:transparent!important;border:0!important;border-bottom:1px solid var(--line)!important;overflow-wrap:anywhere}
+.resources-items p:last-child{border-bottom:0!important}
+.resources-closing{max-width:700px;margin:0 auto;text-align:center;padding:25px 0 12px}
+.resources-closing blockquote{margin:0 auto 28px!important;padding:0 0 0 18px;text-align:left;max-width:590px;font-size:clamp(19px,2vw,26px);line-height:1.55}
+.resources-closing blockquote cite{display:block;margin-top:12px;font-size:13px}
+.resources-signature{padding-top:23px;border-top:1px solid var(--line);font-size:14px;line-height:1.7}
+.resources-signature p{margin:5px 0!important}
+@media(max-width:700px){.resources-layout{grid-template-columns:1fr;margin:25px 0 35px;gap:18px}.resources-group{padding:22px}.resources-closing{text-align:left}.resources-closing blockquote{font-size:20px}}

@@ -49,3 +49,13 @@ body{overflow-wrap:anywhere}.site-header{gap:1rem}.site-header nav{display:flex;
 /* Core Chart: actual exported wheels, placed directly below Laurie's examples */
 .example-wheel{margin:1.2rem 0 0;max-width:100%;background:#000;border-radius:10px;overflow:hidden}
 .example-wheel img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:contain}
+
+/* Elegant, aligned chart cards: same image baseline regardless of text length */
+.chart-example-grid{align-items:stretch;gap:clamp(16px,2.2vw,26px)}
+.chart-example-grid .chart-example-card{display:flex;flex-direction:column;min-width:0;padding:clamp(20px,2.5vw,30px);border:1px solid var(--line);border-radius:18px;background:var(--panel);box-shadow:0 8px 28px rgba(0,0,0,.10);transition:box-shadow .2s ease,border-color .2s ease}
+.chart-example-grid .chart-example-card:hover{box-shadow:0 14px 36px rgba(0,0,0,.16);border-color:var(--gold)}
+.chart-example-grid .chart-example-card h2{font-size:clamp(23px,2.5vw,32px)!important;line-height:1.2;margin:0 0 22px}
+.chart-example-grid .chart-example-card p{line-height:1.65;margin:0 0 10px}
+.chart-example-grid .chart-example-card .example-wheel{margin-top:auto;padding-top:24px;background:transparent;border-radius:0;overflow:visible}
+.chart-example-grid .chart-example-card .example-wheel img{display:block;width:100%;height:auto;aspect-ratio:1;border-radius:12px;background:#000;object-fit:contain}
+@media(max-width:700px){.chart-example-grid .chart-example-card{padding:20px}.chart-example-grid .chart-example-card .example-wheel{margin-top:16px;padding-top:0}}

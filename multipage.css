@@ -108,3 +108,32 @@ body{overflow-wrap:anywhere}.site-header{gap:1rem}.site-header nav{display:flex;
    The source WebPs remain unchanged; only the presentation is modified. */
 .chart-example-grid .chart-example-card .example-wheel{background:#0f0e0c!important;border-radius:12px!important;overflow:hidden!important}
 .chart-example-grid .chart-example-card .example-wheel svg.zuvuya-example-dark-wheel{display:block;width:100%;height:auto;aspect-ratio:4/5;background:#0f0e0c;border-radius:12px}
+
+/* Mayan learning guide: restrained editorial intro and scannable resource cards. */
+.mayan-guide{padding-top:clamp(38px,5.5vw,64px);padding-bottom:clamp(48px,6vw,76px)}
+.mayan-guide__intro{max-width:730px;margin:0 0 34px}
+.mayan-guide__eyebrow{display:block;margin-bottom:12px;font:600 11px/1.4 Inter,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.mayan-guide .mayan-guide__intro h1{font:500 clamp(27px,3.5vw,38px)/1.18 Inter,Arial,sans-serif!important;letter-spacing:-.035em;color:var(--ink);margin:0 0 16px}
+.mayan-guide__intro p{max-width:680px;font-size:clamp(14px,1.5vw,16px);line-height:1.75;color:var(--muted);margin:0}
+.mayan-guide__explanation{max-width:750px;padding:0 0 25px;border-bottom:1px solid var(--line);margin:0 0 32px}
+.mayan-guide .mayan-guide__explanation h2,.mayan-guide .mayan-guide__topics>h2{font:500 clamp(24px,2.5vw,30px)/1.22 'Cormorant Garamond',Georgia,serif!important;color:var(--gold);margin:0 0 15px}
+.mayan-guide__explanation p{font-size:15px;line-height:1.75;margin:0 0 13px}
+.mayan-guide__explanation p:last-child{margin-bottom:0}
+.mayan-guide .mayan-guide__topics>h2{margin:0 0 19px}
+.mayan-guide__cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:stretch}
+.mayan-guide__card{display:flex;flex-direction:column;min-width:0;padding:clamp(21px,3vw,28px);background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:0 6px 19px rgba(0,0,0,.07);transition:border-color .2s ease,transform .2s ease,box-shadow .2s ease}
+.mayan-guide__card:hover{border-color:var(--gold);transform:translateY(-2px);box-shadow:0 12px 26px rgba(0,0,0,.11)}
+.mayan-guide__card-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:17px}
+.mayan-guide__card-symbol{display:grid;place-items:center;width:40px;height:40px;border:1px solid var(--line);border-radius:12px;color:var(--gold);font:23px/1 Georgia,serif}
+.mayan-guide__card-index{font:600 10px/1.4 Inter,Arial,sans-serif;letter-spacing:.11em;color:var(--muted)}
+.mayan-guide .mayan-guide__card h3{font:500 clamp(23px,2.3vw,28px)/1.22 'Cormorant Garamond',Georgia,serif!important;color:var(--gold);margin:0 0 10px}
+.mayan-guide__card>p{font-size:14px;line-height:1.7;color:var(--ink);opacity:.9;margin:0 0 25px;flex:1}
+.mayan-guide__card-links{border-top:1px solid var(--line);padding-top:13px;display:grid;gap:4px}
+.mayan-guide__card-links a{display:flex;justify-content:space-between;align-items:center;gap:12px;text-decoration:none;font:600 12.5px/1.5 Inter,Arial,sans-serif;color:var(--gold);padding:7px 0}
+.mayan-guide__card-links a:hover,.mayan-guide__card-links a:focus-visible{text-decoration:underline;text-underline-offset:4px}
+.mayan-guide__card-links a span{font-size:18px;flex:none}
+.mayan-guide__next{margin:32px 0 0;padding:23px 0 0;border-top:1px solid var(--line)}
+.mayan-guide .mayan-guide__next h2{font:500 clamp(23px,2.6vw,29px)/1.2 'Cormorant Garamond',Georgia,serif!important;color:var(--gold);margin:0 0 10px}
+.mayan-guide__next p{font-size:14px;line-height:1.75;max-width:700px;margin:0}
+@media(max-width:680px){.mayan-guide{padding-top:30px}.mayan-guide__cards{grid-template-columns:1fr;gap:14px}.mayan-guide__card{padding:20px}.mayan-guide__card>p{margin-bottom:16px}.mayan-guide__intro{margin-bottom:29px}.mayan-guide__explanation{margin-bottom:27px}}
+@media(prefers-reduced-motion:reduce){.mayan-guide__card{transition:none}.mayan-guide__card:hover{transform:none}}

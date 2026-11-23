@@ -77,3 +77,9 @@ body{overflow-wrap:anywhere}.site-header{gap:1rem}.site-header nav{display:flex;
 /* Laurie’s Harmonic Sequence illustration */
 .story-eight{margin:28px auto 38px;max-width:680px;text-align:center}
 .story-eight img{display:block;width:100%;height:auto;object-fit:contain;border-radius:14px}
+
+/* Chapter-to-chapter reading journey */
+.chapter-next{max-width:760px;margin:44px auto 64px;padding:26px clamp(20px,4vw,38px);border:1px solid var(--line);border-radius:16px;background:var(--panel)}
+.chapter-next-eyebrow{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.72;margin-bottom:12px}
+.chapter-next a{display:flex;justify-content:space-between;align-items:center;gap:20px;color:var(--gold);font:500 clamp(23px,3vw,34px)/1.2 Georgia,serif;text-decoration:none}
+.chapter-next a:hover{text-decoration:underline}

@@ -89,3 +89,17 @@ body{overflow-wrap:anywhere}.site-header{gap:1rem}.site-header nav{display:flex;
 .planetary-example-section h2{font-size:clamp(26px,3vw,38px);line-height:1.2}
 .planetary-example-context{margin:10px 0 25px;color:var(--text);opacity:.82}
 .planetary-example-section .chart-example-card h3{font:500 clamp(21px,2.4vw,29px)/1.3 Georgia,serif;color:var(--gold);margin:0 0 15px}
+
+/* Source-calculator degree and aspect tables */
+.astro-tables{display:grid;gap:35px;margin:34px 0 10px}
+.astro-tables>section{min-width:0}
+.astro-tables h3{font:500 clamp(23px,2.5vw,31px)/1.2 Georgia,serif;color:var(--gold);margin:0 0 12px}
+.astro-tables p{font-size:14px;line-height:1.65;margin:0 0 18px}
+.astro-table-scroll{width:100%;overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+.astro-data-table{width:100%;border-collapse:collapse;text-align:left;font-size:13px;line-height:1.5;min-width:610px}
+.astro-data-table th{color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:.04em;background:var(--panel)}
+.astro-data-table th,.astro-data-table td{padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+.astro-data-table tbody tr:last-child td{border-bottom:0}
+.astro-data-table tbody tr:hover{background:var(--panel)}
+.astro-data-table td:nth-child(n+3){font-variant-numeric:tabular-nums}
+@media(max-width:700px){.astro-data-table{font-size:12px}.astro-data-table th,.astro-data-table td{padding:9px 10px}}

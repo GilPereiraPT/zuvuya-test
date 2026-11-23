@@ -103,3 +103,8 @@ body{overflow-wrap:anywhere}.site-header{gap:1rem}.site-header nav{display:flex;
 .astro-data-table tbody tr:hover{background:var(--panel)}
 .astro-data-table td:nth-child(n+3){font-variant-numeric:tabular-nums}
 @media(max-width:700px){.astro-data-table{font-size:12px}.astro-data-table th,.astro-data-table td{padding:9px 10px}}
+
+/* Keep all progressive Zuvuya chart examples on a continuous dark canvas.
+   The source WebPs remain unchanged; only the presentation is modified. */
+.chart-example-grid .chart-example-card .example-wheel{background:#0f0e0c!important;border-radius:12px!important;overflow:hidden!important}
+.chart-example-grid .chart-example-card .example-wheel svg.zuvuya-example-dark-wheel{display:block;width:100%;height:auto;aspect-ratio:4/5;background:#0f0e0c;border-radius:12px}

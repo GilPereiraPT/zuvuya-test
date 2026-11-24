@@ -140,3 +140,39 @@ body{overflow-wrap:anywhere}.site-header{gap:1rem}.site-header nav{display:flex;
 
 /* Compact spacing for the Kin & Tones guide heading. */
 .mayan-guide__intro:has(>h1:only-child){margin-bottom:24px}
+
+/* Final editorial review: show all three house systems without hiding MLC.
+   The planetary table fits its container on desktop and becomes compact
+   labelled cards on small screens or at high browser zoom. */
+.astro-data-table--planetary{width:100%;min-width:0;table-layout:fixed;font-size:12px}
+.astro-data-table--planetary th,.astro-data-table--planetary td{padding:10px 8px;white-space:normal;overflow-wrap:normal;word-break:normal;vertical-align:middle}
+.astro-data-table--planetary th{line-height:1.35;font-size:11px}
+.astro-data-table--planetary th:nth-child(1){width:20%}
+.astro-data-table--planetary th:nth-child(2){width:32%}
+.astro-data-table--planetary th:nth-child(3),
+.astro-data-table--planetary th:nth-child(4),
+.astro-data-table--planetary th:nth-child(5){width:16%}
+.astro-data-table--planetary td:nth-child(n+3){text-align:center;font-weight:600}
+.astro-data-table--planetary th:nth-child(n+3){text-align:center}
+@media(max-width:820px){
+ .astro-table-scroll--planetary{border:0;overflow:visible;border-radius:0}
+ .astro-data-table--planetary,.astro-data-table--planetary tbody{display:block;width:100%;min-width:0}
+ .astro-data-table--planetary thead{display:none}
+ .astro-data-table--planetary tbody{display:grid;gap:12px}
+ .astro-data-table--planetary tbody tr{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:13px 12px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+ .astro-data-table--planetary td{display:block;min-width:0;padding:2px 4px;border:0;font-size:14px;white-space:normal}
+ .astro-data-table--planetary td:first-child{grid-column:1/-1;text-align:left;font-size:16px;font-weight:600}
+ .astro-data-table--planetary td:nth-child(2){grid-column:1/-1;text-align:left;padding-bottom:8px;margin-bottom:3px;border-bottom:1px solid var(--line);color:var(--muted)}
+ .astro-data-table--planetary td:nth-child(n+3){text-align:center;font-variant-numeric:tabular-nums}
+ .astro-data-table--planetary td:nth-child(n+3)::before{display:block;font:600 10px/1.4 Inter,Arial,sans-serif;letter-spacing:.02em;color:var(--gold);margin-bottom:4px}
+ .astro-data-table--planetary td:nth-child(3)::before{content:"Astrology"}
+ .astro-data-table--planetary td:nth-child(4)::before{content:"DSC"}
+ .astro-data-table--planetary td:nth-child(5)::before{content:"MLC"}
+}
+/* Contact address is easy to discover on every page and in Resources. */
+.resources-contact{margin:34px 0 28px;padding:22px 26px;border:1px solid var(--gold);border-radius:12px;background:var(--panel);text-align:center}
+.resources-contact__label{font:600 13px/1.5 Inter,Arial,sans-serif;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:0 0 9px!important}
+.resources-contact__link{display:inline-block;max-width:100%;font:600 clamp(17px,2.5vw,23px)/1.6 Inter,Arial,sans-serif;color:var(--gold);text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere}
+.resources-contact__link:focus-visible,.footer-contact a:focus-visible{outline:2px solid var(--gold);outline-offset:5px}
+.site-footer .footer-contact{margin:12px auto 0;font:600 13px/1.6 Inter,Arial,sans-serif;color:var(--ink)}
+.site-footer .footer-contact a{color:var(--gold);text-decoration:underline;text-underline-offset:3px}
